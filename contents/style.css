@@ -1,0 +1,47 @@
+body {
+	background-color: #282C34;
+	color: #FFFFFF;
+	font-family: sans-serif;
+	margin: 10px 10px;
+	font-size: 20px;
+}
+
+header {
+	font-size: 52px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	border-bottom: solid rgba(255, 255, 255, 0.3) 15px;
+}
+
+input {
+	font-size: 24px;
+	color:white;
+	border: solid rgba(255, 255, 255, 0) 3px;
+	border-radius: 10px;
+	padding: 5px;
+	width: 100%;
+	box-sizing: border-box; 
+	background-color: rgba(255, 255, 255, 0.3);
+	outline: none;
+	margin-top: 5px;
+	transition: border-color 0.3s ease;
+}
+
+input:focus {
+	border: solid rgba(255, 255, 255, 0.75) 3px;
+}
+
+.line {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.item {
+	display: block;
+	width: 50%;
+}
+
+.margin {
+	margin-right: 15px;
+}
+
