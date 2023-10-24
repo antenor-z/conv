@@ -38,7 +38,7 @@ function convertTemp(e, inputA, inputB) {
 	}
 }
 
-const FACTORS = [3.281, 2.54, 1.852, 33.864]
+const FACTORS = [1/3.281, 2.54, 1/1.852, 33.864]
 
 inputPes.addEventListener("input", (e) => 
 	convert(e, FACTORS[0], inputPes, inputMetros))
