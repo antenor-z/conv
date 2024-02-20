@@ -38,7 +38,7 @@ function convertTemp(e, inputA, inputB) {
 	}
 }
 
-const FACTORS = [1/3.281, 2.54, 1/1.852, 33.864, 1.60934]
+const FACTORS = [0.3048, 2.54, 1.852, 33.8639, 1.609344]
 
 inputPes.addEventListener("input", (e) => 
 	convert(e, FACTORS[0], inputPes, inputMetros))
@@ -51,9 +51,9 @@ inputCm.addEventListener("input", (e) =>
 	convert(e, FACTORS[1], inputPol, inputCm))
 
 inputKmh.addEventListener("input", (e) => 
-	convert(e, FACTORS[2], inputKmh, inputKts))
+	convert(e, FACTORS[2], inputKts, inputKmh))
 inputKts.addEventListener("input", (e) => 
-	convert(e, FACTORS[2], inputKmh, inputKts))
+	convert(e, FACTORS[2], inputKts, inputKmh))
 
 inputinHg.addEventListener("input", (e) => 
 	convert(e, FACTORS[3], inputinHg, inputhPa))
